@@ -1,0 +1,17 @@
+The following CSS code snippet demonstrates an uncommon error related to the specificity of CSS selectors:
+
+```css
+div.container p {
+  color: blue;
+}
+
+div p {
+  color: red;
+}
+
+.container p {
+  color: green;
+}
+```
+
+This might seem straightforward, but the order of selectors and specificity can lead to unexpected results.  Depending on the browser, the order in which these rules are processed can lead to different outcomes. The order of selector declarations matters when specificity is equal among selectors.
