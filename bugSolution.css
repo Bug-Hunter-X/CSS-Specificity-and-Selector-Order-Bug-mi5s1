@@ -1,0 +1,17 @@
+The solution is to carefully consider the specificity of your CSS selectors and ensure that the most specific rules are placed later in your stylesheet. Alternatively, use the `!important` flag, though this is generally discouraged because it can lead to maintainability issues.
+
+```css
+div p {
+  color: red;
+}
+
+div.container p {
+  color: blue;
+}
+
+.container p {
+  color: green;
+}
+```
+
+In this corrected version, the order of the selectors now reflects the specificity; the most specific selector (`div.container p`) will always take precedence. This should resolve the inconsistent styling across different browsers.
