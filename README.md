@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in CSS related to selector specificity and order. The `bug.css` file contains CSS rules that exhibit unexpected behavior based on the ordering of selectors. The `bugSolution.css` file provides a corrected version.  Understanding CSS specificity is crucial for avoiding these types of issues.
